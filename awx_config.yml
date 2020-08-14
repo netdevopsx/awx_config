@@ -2,11 +2,11 @@
 all:
   hosts:
     localhost:
-      awx_release: "13.0.0"
+      awx_release: "14.0.0"
       kubernetes_deployment_name: "awx-{{ lookup('env','ENV') }}"
       kubernetes_context: "kubernetes-admin@cluster.local"
       kubernetes_namespace: "awx-{{ lookup('env','ENV') }}"
-      dockerhub_version:    "13.0.0"
+      dockerhub_version:    "14.0.0"
       kubernetes_awx_image: "ansible/awx"
       ansible_python_interpreter: "/usr/bin/env python3"
       kubernetes_ingress_hostname: "{{ lookup('env','INGRESS_HOSTNAME') }}"
